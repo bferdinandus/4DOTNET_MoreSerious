@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakes", "Fakes\Fakes.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{F0FADF08-3F12-4BFB-92A1-DAC3DF7AF71D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "RestService\RestService.csproj", "{E899E0B8-DC9B-41F0-AFAE-5725F865C472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestService", "RestService\RestService.csproj", "{E899E0B8-DC9B-41F0-AFAE-5725F865C472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.Interfaces", "Repository.Interfaces\Repository.Interfaces.csproj", "{1D0C6A84-36B8-4A5F-9115-C36ED54ADA7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.InMemory", "Repository.InMemory\Repository.InMemory.csproj", "{BFF78F21-1BAE-493B-8FA7-E3CA359FCD83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{E899E0B8-DC9B-41F0-AFAE-5725F865C472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E899E0B8-DC9B-41F0-AFAE-5725F865C472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E899E0B8-DC9B-41F0-AFAE-5725F865C472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D0C6A84-36B8-4A5F-9115-C36ED54ADA7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D0C6A84-36B8-4A5F-9115-C36ED54ADA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D0C6A84-36B8-4A5F-9115-C36ED54ADA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D0C6A84-36B8-4A5F-9115-C36ED54ADA7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF78F21-1BAE-493B-8FA7-E3CA359FCD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF78F21-1BAE-493B-8FA7-E3CA359FCD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF78F21-1BAE-493B-8FA7-E3CA359FCD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF78F21-1BAE-493B-8FA7-E3CA359FCD83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

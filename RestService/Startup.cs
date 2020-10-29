@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Repository.InMemory;
+using Repository.Interfaces;
 
 namespace RestService
 {
@@ -14,6 +16,7 @@ namespace RestService
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddControllers();
         }
 
