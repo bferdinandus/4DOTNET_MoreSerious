@@ -6,7 +6,7 @@ namespace Fakes
 {
     public class PersonBuilder : Faker<Entities.Person>
     {
-        public PersonBuilder() : base("en")
+        public PersonBuilder(string locale = "en") : base(locale)
         {
             StrictMode(true);
             RuleFor(p => p.Id, f => f.IndexFaker);

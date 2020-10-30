@@ -24,7 +24,7 @@ namespace RestService
             }
 
             services.AddTransient<IPersonRepository, PersonRepository>();
-            services.AddControllers().AddXmlSerializerFormatters() ;
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
