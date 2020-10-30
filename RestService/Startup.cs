@@ -18,13 +18,14 @@ namespace RestService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            if (env.IsTest())
-            {
-
-            }
-
             services.AddTransient<IPersonRepository, PersonRepository>();
+
             services.AddControllers();
+
+            services.AddCors(o =>
+            {
+                o.AddPolicy("alles", p => p.AllowAnyOrigin());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +35,8 @@ namespace RestService
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("alles");
 
             app.UseRouting();
 

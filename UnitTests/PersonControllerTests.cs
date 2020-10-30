@@ -35,6 +35,7 @@ namespace UnitTests
             Assert.Equal(200, (int)result.StatusCode);
             // Headers testen en zo... ?
             // Bv. sanitizer loop hier WEL mee...
+            // Authorisation, policies
         }
 
         [Fact]
